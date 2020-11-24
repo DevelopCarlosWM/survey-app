@@ -1,0 +1,22 @@
+.form--container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .form--container__card {
+        height: 100%;
+        width: 80%;
+        min-width: 280px;
+        max-width: 500px;
+        background: $off-white;
+        border-radius: 8px;
+        .container--card__item {
+            width: 100%;
+            height: auto;
+            margin: 10px 0px 0px;
+            padding: 10px;
+        }
+    }
+}

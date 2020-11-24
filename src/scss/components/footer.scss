@@ -1,0 +1,31 @@
+.footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg-accent;
+    margin-top: 20px;
+    .footer--information {
+        color: $off-white;
+        font-size: 0.7rem;
+        text-align: right;
+        width: 50%;
+    }
+    .footer--container--image {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        .footer__image {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            top: calc(50% - 35px);
+            left: calc(50% - 35px);
+            background-image: url('https://facebook.github.io/react-360/img/logo.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

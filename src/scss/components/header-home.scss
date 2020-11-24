@@ -1,0 +1,46 @@
+.header--container {
+    height: 280px;
+    width: 100%;
+    background: $bg;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    i {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        animation: stars linear infinite;
+    }
+    .header--container__title {
+        position: absolute;
+        color: $off-white;
+        font-weight: 300;
+        font-size: 1.7rem;
+        top: calc(50% - .85rem);
+        left: calc(50% - 79px);
+    }
+    .header--container__logo {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: calc(30% - 50px);
+        left: calc(50% - 50px);
+        background-image: url('https://facebook.github.io/react-360/img/logo.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@keyframes stars {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%,90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}

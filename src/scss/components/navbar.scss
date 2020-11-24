@@ -1,0 +1,36 @@
+.nav {
+    height: 80px;
+    width: 100%;
+    background: $bg-accent;
+    .nav--container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .nav--container__title {
+            color: $just-white;
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin: auto 0px;
+            position: absolute;
+            top: calc(50% - .85rem);
+            left: 3%;
+        }
+        .nav--container__menu-button {
+            width: 40px;
+            height: 40px;
+            background: $off-white;
+            position: absolute;
+            left: calc(100% - 45px);
+            top: calc(50% - 20px)
+        }
+        .nav--container__menu {
+            position: absolute;
+            width: 40%;
+            min-width: 100px;
+            max-width: 250px;
+            height: 100px;
+            right: 2%;
+            top: 100%;
+        }
+    }
+}
